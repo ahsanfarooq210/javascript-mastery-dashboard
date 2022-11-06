@@ -7,7 +7,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
 function App()
 {
-  const activeMenu = true
+  const activeMenu = false
 
   return (
     <div className="App">
@@ -33,8 +33,28 @@ function App()
           </div>
           <div>
             <Routes>
+            {/* dashboard */}
               <Route path='/' element='EComerace'/>
-              <Route path='/' element='EComerace'/>
+              <Route path='/ectomere' element='EComerace'/>
+              {/* pages */}
+              <Route path='/orders' element='orders' />
+              <Route path='/employees' element='employees' />
+              <Route path='/customers' element='customers' />
+
+              {/* apps routes */}
+              <Route path='/kanban' element='kanban' />
+              <Route path='/editor' element='editor' />
+              <Route path='/calender' element='calender' />
+              <Route path='/color-picker' element='colorpicker' />
+
+              {/* charts */}
+              <Route path='/line' element='line' />
+              <Route path='/area' element='area' /> 
+              <Route path='/bar' element='bar' /> 
+              <Route path='/pie' element='pie' /> 
+              <Route path='/financial' element='financial' /> 
+              <Route path='/color-mapping' element='color-mapping' /> 
+              <Route path='/stacked' element='stacked' /> 
             </Routes>
           </div>
           
