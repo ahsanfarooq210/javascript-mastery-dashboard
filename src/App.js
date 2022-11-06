@@ -10,7 +10,7 @@ import {Ecommerce,Orders,Calendar,Employees,Stacked,Pyramid,Customers,Kanban,Are
 
 function App()
 {
-  const activeMenu = false
+  const activeMenu = true
 
   return (
     <div className="App">
