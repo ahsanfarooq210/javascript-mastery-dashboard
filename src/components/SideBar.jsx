@@ -30,7 +30,7 @@ const SideBar = () => {
               onClick={handleCloseSizeBar}
               className="items-center gap-3 ml-4 mt-4 flex text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
               <SiShopware />
-              <span>Shoppy</span>
+              <span>My Dashboard</span>
             </Link>
             <TooltipComponent content="menu" position="BottomCenter">
               <button
