@@ -29,7 +29,8 @@ const App = () => {
             <TooltipComponent
               content="Settings"
               position="Top"
-            >
+              onClick={()=>setThemeSettings(true)}
+              >
               <button
                 type="button"
                 onClick={() => setThemeSettings(true)}
@@ -62,6 +63,7 @@ const App = () => {
             </div>
             <div>
               {themeSettings && (<ThemeSettings />)}
+              {/* <ThemeSettings/> */}
 
               <Routes>
                 {/* dashboard  */}
