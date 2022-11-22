@@ -6,7 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import { ContextProvider } from './contexts/ContextProvider';
 import { registerLicense } from '@syncfusion/ej2-base';
 
-registerLicense('ORg4AjUWIQA/Gnt2VVhjQlFac1lJXGFWfVJpTGpQdk5xdV9DaVZUTWY/P1ZhSXxRd0RjUH9bdXFRRWleV0E=')
+//go to the syncfusion website and get your licensing key and make a environment variable 
+//in the .env file 
+registerLicense(process.env.REACT_APP_SYNCFUSION_LISCENCE_KEY)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
